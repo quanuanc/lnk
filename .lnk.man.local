@@ -4,3 +4,4 @@
 .config/zed/keymap.json
 .config/zed/settings.json
 .ideavimrc
+.m2/settings.xml
