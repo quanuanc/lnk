@@ -1,4 +1,5 @@
 .atamanrc.config
+.config/fish/fish_variables
 .config/ghostty/config
 .config/wezterm
 .config/zed/keymap.json
