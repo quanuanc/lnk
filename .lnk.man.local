@@ -1,4 +1,5 @@
 .atamanrc.config
+.config/fish/config.fish
 .config/fish/fish_variables
 .config/ghostty/config
 .config/wezterm
