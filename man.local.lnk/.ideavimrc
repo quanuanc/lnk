@@ -1,0 +1,134 @@
+let mapleader = " "
+
+""" Plugins -----------------------------
+Plugin 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'machakann/vim-highlightedyank'
+Plug 'chrisbra/matchit'
+Plug 'tpope/vim-commentary'
+Plug 'tommcdo/vim-exchange'
+set peekaboo
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'kana/vim-textobj-entire'
+set functiontextobj
+set switch
+let g:switch_definitions = 'group:basic,group:java,group:rspec'
+
+""" set ---------------------------------
+set number relativenumber
+set keep-english-in-normal
+set idearefactormode=keep
+set ideastatusicon=gray
+set ideajoin
+set clipboard+=unnamed
+set scrolloff=3
+set sidescrolloff=8
+set ideamarks
+set nokeep-english-in-normal-and-restore-in-insert
+
+
+""" search -------------------------------
+set incsearch
+set hlsearch
+set smartcase
+set ignorecase
+nmap <ESC><ESC> :noh<CR>
+vmap * "ry/<C-R>r<CR>
+
+
+""" edit action ----------------------------------
+map <M-d> "_d
+map <M-c> "_c
+imap <C-a> <Home>
+imap <C-e> <End>
+vmap v <Action>(EditorSelectWord)
+vmap V <Action>(EditorUnSelectWord)
+nmap yY ^y$
+noremap + :Switch<CR>
+
+
+""" navigation ----------------------------
+nmap <C-S-[> :tabm-1<CR>
+nmap <C-S-]> :tabm+1<CR>
+nmap ]d <Action>(GotoNextError)
+nmap [d <Action>(GotoPreviousError)
+nmap ]g <Action>(VcsShowNextChangeMarker)
+nmap [g <Action>(VcsShowPrevChangeMarker)
+noremap <C-h> <C-w>h
+noremap <C-l> <C-w>l
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+"nmap <C-o> <Action>(Back)
+"nmap <C-i> <Action>(Forward)
+
+
+""" some action ---------------------------
+map == <Action>(ReformatCode)
+nmap -- <Action>(OptimizeImports)
+nmap zc <Action>(CollapseRegion)
+nmap zo <Action>(ExpandRegion)
+nmap zC <Action>(CollapseAllRegions)
+nmap zO <Action>(ExpandAllRegions)
+nmap gD <Action>(GotoTypeDeclaration)
+nmap gA <Action>(FindUsages)
+nmap <M-k> <Action>(QuickJavaDoc)
+imap <M-k> <Action>(QuickJavaDoc)
+nmap <M-j> <Action>(ShowErrorDescription)
+imap <M-j> <Action>(ShowErrorDescription)
+nmap gi <Action>(GotoImplementation)
+nmap gI <Action>(GotoSuperMethod)
+nmap <leader>h <Action>(HighlightUsagesInFile)
+nmap <leader>s <Action>(SelectInProjectView)
+nmap cd <Action>(RenameElement)
+nmap [f <Action>(MethodUp)
+nmap ]f <Action>(MethodDown)
+nmap s <Action>(flash.search)
+vmap s <Action>(flash.search)
+
+
+""" run and debug, break point ----------------
+nmap \b <Action>(ToggleLineBreakpoint)
+nmap \p <Action>(ChooseDebugConfiguration)
+nmap \d <Action>(DebugClass)
+nmap \r <Action>(RunClass)
+
+
+""" vcs action --------------------------------
+nmap <leader>ga <Action>(Annotate)
+nmap <leader>gd <Action>(Compare.SameVersion)
+vmap <leader>gd <Action>(CompareClipboardWithSelection)
+nmap <leader>gr <Action>(Vcs.RollbackChangedLines)
+
+
+""" handler -------------------------------------
+sethandler <S-CR> a:vim
+sethandler <S-Left> a:vim
+sethandler <S-Up> a:vim
+sethandler <S-Right> a:vim
+sethandler <S-Down> a:vim
+sethandler <C-2> a:vim
+sethandler <C-S-2> a:vim
+sethandler <C-6> a:vim
+sethandler <C-S-6> a:vim
+sethandler <C-A> a:vim
+sethandler <C-B> a:vim
+sethandler <C-C> a:vim
+sethandler <C-D> a:vim
+sethandler <C-E> a:vim
+sethandler <C-F> a:vim
+sethandler <C-G> a:vim
+sethandler <C-H> a:vim
+sethandler <C-I> a:vim
+sethandler <C-J> a:vim
+sethandler <C-K> a:vim
+sethandler <C-L> a:vim
+sethandler <C-M> a:vim
+sethandler <C-N> a:vim
+sethandler <C-O> a:vim
+sethandler <C-P> a:vim
+sethandler <C-R> a:vim
+sethandler <C-S> a:vim
+sethandler <C-T> a:vim
+sethandler <C-V> a:vim
+sethandler <C-W> a:vim
