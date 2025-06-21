@@ -1,3 +1,4 @@
 .atamanrc.config
 .config/ghostty/config
+.config/wezterm
 .ideavimrc
