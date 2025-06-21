@@ -1,2 +1,3 @@
 .config/nvim
+.config/stylua.toml
 .vimrc
