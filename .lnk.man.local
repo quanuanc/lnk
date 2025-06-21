@@ -1,4 +1,5 @@
 .atamanrc.config
 .config/ghostty/config
 .config/wezterm
+.config/zed/keymap.json
 .ideavimrc
