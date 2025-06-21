@@ -2,4 +2,5 @@
 .config/ghostty/config
 .config/wezterm
 .config/zed/keymap.json
+.config/zed/settings.json
 .ideavimrc
