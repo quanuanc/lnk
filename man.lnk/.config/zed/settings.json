@@ -1,22 +1,6 @@
 {
   "theme": "Ayu Light",
-  "ssh_connections": [
-    {
-      "host": "androidl",
-      "projects": [
-        {
-          "paths": [
-            "/etc/nginx"
-          ]
-        },
-        {
-          "paths": [
-            "/etc/ssh"
-          ]
-        }
-      ]
-    }
-  ],
+  "ssh_connections": [],
   "tabs": {
     "file_icons": true
   },
