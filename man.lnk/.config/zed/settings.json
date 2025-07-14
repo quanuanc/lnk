@@ -9,23 +9,10 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4-thinking"
     },
     "version": "2",
     "dock": null
-  },
-  "language_models": {
-    "openai": {
-      "api_url": "https://openrouter.ai/api/v1",
-      "available_models": [
-        {
-          "name": "anthropic/claude-sonnet-4",
-          "display_name": "Claude Sonnet 4",
-          "max_tokens": 200000
-        }
-      ],
-      "version": "1"
-    }
   },
   "auto_install_extensions": {
     "beancount": false,
@@ -37,7 +24,7 @@
   "cursor_blink": false,
   "features": {
     "copilot": false,
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "none"
   },
   "format_on_save": "off",
   "lsp": {},

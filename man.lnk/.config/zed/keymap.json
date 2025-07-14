@@ -21,7 +21,7 @@
     }
   },
   {
-    "context": "vim_mode == normal",
+    "context": "VimControl && !menu",
     "bindings": {
       "s": ["vim::PushSneak", {}],
       "S": ["vim::PushSneakBackward", {}],
@@ -29,9 +29,11 @@
       "[ g": "editor::GoToPreviousHunk",
       "] g": "editor::GoToHunk",
       "g i": "editor::GoToImplementation",
+      "g r": "vim::PushReplaceWithRegister",
       "space g a": "git::Blame",
       "space g r": "git::Restore",
-      "space s": "pane::RevealInProjectPanel"
+      "space s": "pane::RevealInProjectPanel",
+      "space r": "editor::ReloadFile"
     }
   },
   {
@@ -40,6 +42,7 @@
       "s": ["vim::PushSneak", {}],
       "S": ["vim::PushSneakBackward", {}],
       "= =": "editor::FormatSelections",
+      "g r": ["vim::Paste", { "preserve_clipboard": true }],
       "space g r": "git::Restore"
     }
   }
