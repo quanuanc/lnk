@@ -8,7 +8,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'chrisbra/matchit'
 Plug 'tpope/vim-commentary'
 Plug 'tommcdo/vim-exchange'
-set peekaboo
+""" set peekaboo
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'kana/vim-textobj-entire'
 set functiontextobj

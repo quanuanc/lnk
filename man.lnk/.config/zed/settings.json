@@ -8,10 +8,9 @@
     "always_allow_tool_actions": true,
     "default_profile": "ask",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-thinking"
+      "provider": "openrouter",
+      "model": "openai/gpt-4.1"
     },
-    "version": "2",
     "dock": null
   },
   "auto_install_extensions": {
@@ -23,7 +22,6 @@
   "buffer_line_height": "comfortable",
   "cursor_blink": false,
   "features": {
-    "copilot": false,
     "edit_prediction_provider": "none"
   },
   "format_on_save": "off",
@@ -37,9 +35,6 @@
   "terminal": {
     "copy_on_select": true,
     "option_as_meta": true,
-    "toolbar": {
-      "title": false
-    },
     "line_height": "standard",
     "detect_venv": "off"
   },
