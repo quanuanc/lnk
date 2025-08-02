@@ -8,3 +8,4 @@
 .config/zed/settings.json
 .ideavimrc
 .m2/settings.xml
+Library/Application Support/go/env
