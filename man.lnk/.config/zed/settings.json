@@ -1,15 +1,24 @@
 {
   "theme": "Ayu Light",
-  "ssh_connections": [],
+  "ssh_connections": [
+    {
+      "host": "echo",
+      "projects": []
+    },
+    {
+      "host": "echo-0x8",
+      "projects": []
+    }
+  ],
   "tabs": {
     "file_icons": true
   },
   "agent": {
     "always_allow_tool_actions": true,
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
-      "provider": "openrouter",
-      "model": "openai/gpt-4.1"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
     },
     "dock": null
   },
@@ -18,7 +27,7 @@
     "nix": false
   },
   "autosave": "on_focus_change",
-  "base_keymap": "JetBrains",
+  // "base_keymap": "JetBrains",
   "buffer_line_height": "comfortable",
   "cursor_blink": false,
   "features": {
