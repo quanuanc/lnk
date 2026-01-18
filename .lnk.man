@@ -1,4 +1,5 @@
 .atamanrc.config
+.config/duti/duti.conf
 .config/fish/config.fish
 .config/fish/fish_variables
 .config/fish/functions
