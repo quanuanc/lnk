@@ -1,45 +1,71 @@
 {
-  "theme": "Ayu Light",
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "agent_servers": {
+    "codex": {
+      "default_model": "gpt-5.2/high"
+    }
+  },
+  "base_keymap": "VSCode",
+  "git_panel": {
+    "sort_by_path": true
+  },
   "ssh_connections": [
     {
-      "host": "echo",
-      "projects": []
+      "host": "orb",
+      "username": "debian",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/quanuanc"
+          ]
+        },
+        {
+          "paths": [
+            "/home/quanuanc/redis"
+          ]
+        }
+      ]
     },
     {
-      "host": "echo-0x8",
-      "projects": []
+      "host": "echo",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/data/data/com.termux/files/home/.termux/boot/./"
+          ]
+        },
+        {
+          "paths": [
+            "/data/data/com.termux/files/usr/etc/mihomo/./"
+          ]
+        }
+      ]
     }
   ],
-  "tabs": {
-    "file_icons": true
-  },
   "agent": {
-    "always_allow_tool_actions": true,
-    "default_profile": "write",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
     },
-    "dock": null
+    "model_parameters": []
   },
   "auto_install_extensions": {
     "beancount": false,
     "nix": false
   },
   "autosave": "on_focus_change",
-  // "base_keymap": "JetBrains",
-  "buffer_line_height": "comfortable",
   "cursor_blink": false,
-  "features": {
-    "edit_prediction_provider": "none"
-  },
   "format_on_save": "off",
   "lsp": {},
-  "proxy": "socks5h://127.0.0.1:6153",
-  "relative_line_numbers": true,
-  "scrollbar": {
-    "show": "auto"
-  },
+  "relative_line_numbers": "enabled",
   "tab_size": 2,
   "terminal": {
     "copy_on_select": true,

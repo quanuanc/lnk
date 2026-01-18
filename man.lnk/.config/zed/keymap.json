@@ -1,25 +1,26 @@
 [
   {
-    // "context": "Workspace",
+    "context": "Workspace",
     "bindings": {
       "cmd-1": "project_panel::ToggleFocus",
       "cmd-0": "git_panel::ToggleFocus"
     }
   },
-  {
-    "context": "Pane",
-    "bindings": {
-      "ctrl-shift-h": "pane::ActivatePreviousItem",
-      "ctrl-shift-l": "pane::ActivateNextItem"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-n": ["terminal::SendKeystroke", "down"],
-      "ctrl-p": ["terminal::SendKeystroke", "up"]
-    }
-  },
+  // {
+  //   "context": "Pane",
+  //   "bindings": {
+  //     "ctrl-shift-h": "pane::ActivatePreviousItem",
+  //     "ctrl-shift-l": "pane::ActivateNextItem"
+  //   }
+  // },
+  // {
+  //   "context": "Terminal",
+  //   "bindings": {
+  //     "ctrl-n": ["terminal::SendKeystroke", "down"],
+  //     "ctrl-p": ["terminal::SendKeystroke", "up"],
+  //     "ctrl-`": "terminal_panel::ToggleFocus"
+  //   }
+  // },
   {
     "context": "vim_mode == normal",
     "bindings": {
