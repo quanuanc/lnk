@@ -6,6 +6,7 @@
 .config/wezterm
 .config/zed/keymap.json
 .config/zed/settings.json
+.gitconfig
 .ideavimrc
 .m2/settings.xml
 Library/Application Support/go/env
