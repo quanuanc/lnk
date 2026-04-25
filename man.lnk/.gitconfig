@@ -2,23 +2,29 @@
 	name = Quanuanc
 	email = quanuanc@outlook.com
 [diff]
-  tool = difftastic
+	tool = difftastic
 [difftool]
-  prompt = false
+	prompt = false
 [difftool "difftastic"]
-  cmd = difft "$LOCAL" "$REMOTE"
+	cmd = difft "$LOCAL" "$REMOTE"
 [pager]
-  difftool = true
+	difftool = true
 [core]
 	excludesfile = /Users/quanuanc/.gitignore
 	autocrlf = input
+	pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://gitee.com"]
 	provider = generic
+[credential "https://dev.azure.com"]
+	useHttpPath = true
 [pull]
 	rebase = true
 [alias]
-  df = difftool
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+	df = difftool
