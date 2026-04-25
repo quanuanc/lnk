@@ -29,4 +29,16 @@
       "space g r": "git::Restore",
     },
   },
+  {
+    "context": "ProjectPanel && not_editing",
+    "unbind": {
+      "s": "workspace::OpenWithSystem",
+      "o": "project_panel::OpenSplitHorizontal",
+      "p": "project_panel::OpenPermanent",
+    },
+    "bindings": {
+      "s": "project_panel::OpenSplitHorizontal",
+      "o": "project_panel::OpenPermanent",
+    },
+  },
 ]

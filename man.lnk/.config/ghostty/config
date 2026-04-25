@@ -7,4 +7,6 @@ copy-on-select = clipboard
 window-save-state = always
 maximize = true
 macos-titlebar-proxy-icon = hidden
+shell-integration-features = ssh-env,ssh-terminfo
+
 keybind = shift+enter=text:\x1b\r

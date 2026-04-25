@@ -1,66 +1,49 @@
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "proxy": "socks5h://127.0.0.1:6153",
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "agent_servers": {
-    "codex": {
-      "default_model": "gpt-5.2/high"
-    }
+    "codex-acp": {
+      "type": "registry",
+      "default_model": "gpt-5.2/high",
+    },
   },
   "base_keymap": "VSCode",
   "git_panel": {
-    "sort_by_path": true
+    "dock": "left",
+    "sort_by_path": true,
   },
   "ssh_connections": [
     {
-      "host": "orb",
-      "username": "debian",
-      "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/home/quanuanc"
-          ]
-        },
-        {
-          "paths": [
-            "/home/quanuanc/redis"
-          ]
-        }
-      ]
-    },
-    {
       "host": "echo",
       "args": [],
-      "projects": [
-        {
-          "paths": [
-            "/data/data/com.termux/files/home/.termux/boot/./"
-          ]
-        },
-        {
-          "paths": [
-            "/data/data/com.termux/files/usr/etc/mihomo/./"
-          ]
-        }
-      ]
-    }
+      "projects": [],
+    },
   ],
   "agent": {
-    "default_profile": "ask",
+    "dock": "right",
+    "default_profile": "write",
     "default_model": {
+      "effort": "high",
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "model": "gpt-5-mini",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "auto_install_extensions": {
     "beancount": false,
-    "nix": false
+    "nix": false,
   },
   "autosave": "on_focus_change",
   "cursor_blink": false,
@@ -72,14 +55,15 @@
     "copy_on_select": true,
     "option_as_meta": true,
     "line_height": "standard",
-    "detect_venv": "off"
+    "detect_venv": "off",
   },
   "vim": {
     "use_smartcase_find": true,
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "vim_mode": true,
   "project_panel": {
-    "auto_reveal_entries": false
-  }
+    "dock": "left",
+    "auto_reveal_entries": false,
+  },
 }

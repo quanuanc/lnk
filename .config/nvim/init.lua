@@ -87,4 +87,5 @@ fzf.setup({
 fzf.register_ui_select()
 
 vim.keymap.set("n", "<D-p>", fzf.files, { desc = "Find files" })
+vim.keymap.set("n", "<M-p>", fzf.files, { desc = "Find files" })
 vim.keymap.set("n", "g/", fzf.live_grep, { desc = "Search text" })
