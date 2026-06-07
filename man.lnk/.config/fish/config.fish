@@ -11,13 +11,12 @@ if status is-interactive
   set -x GOCACHE $HOME/.cache/go
 
   # set -x HOMEBREW_BREW_GIT_REMOTE https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
-  # set -x HOMEBREW_API_DOMAIN https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api
-  # set -x HOMEBREW_BOTTLE_DOMAIN https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+  set -x HOMEBREW_API_DOMAIN https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api
+  set -x HOMEBREW_BOTTLE_DOMAIN https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
-  # alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
+  alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
 
   function fish_greeting; end
 else
 
 end
-
