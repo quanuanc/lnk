@@ -1,11 +1,13 @@
 {
+  "proxy": "http://127.0.0.1:6152",
+  "diff_view_style": "split",
+  "cli_default_open_behavior": "new_window",
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
-  "proxy": "socks5h://127.0.0.1:6153",
   "edit_predictions": {
     "mode": "subtle",
   },
@@ -24,13 +26,6 @@
     "dock": "left",
     "sort_by_path": true,
   },
-  "ssh_connections": [
-    {
-      "host": "echo",
-      "args": [],
-      "projects": [],
-    },
-  ],
   "agent": {
     "dock": "right",
     "default_profile": "write",
