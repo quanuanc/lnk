@@ -86,6 +86,10 @@ if [[ -o interactive ]]; then
     eval "$(atuin init zsh --disable-up-arrow)"
   fi
 
+  if command -v mise >/dev/null 2>&1; then
+    eval "$(mise activate zsh)"
+  fi
+
   # Fish-like autosuggestions. Use fixed paths instead of `brew --prefix` to
   # avoid launching Homebrew on every shell startup.
   ZSH_AUTOSUGGEST_STRATEGY=(history)
