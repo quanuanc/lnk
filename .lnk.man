@@ -11,5 +11,6 @@
 .gitignore
 .ideavimrc
 .m2/settings.xml
+.zsh_plugins.pre.txt
+.zsh_plugins.txt
 .zshrc
-Library/Application Support/go/env
