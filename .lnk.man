@@ -11,6 +11,7 @@
 .gitignore
 .ideavimrc
 .m2/settings.xml
+.zprofile
 .zsh_plugins.pre.txt
 .zsh_plugins.txt
 .zshrc
