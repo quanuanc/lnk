@@ -10,9 +10,15 @@ proxy_off() {
   unset http_proxy https_proxy all_proxy
 }
 
-proxy_on
+# proxy_on
 
-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+# Use the unprivileged userspace tailscaled instance.
+tailscale() {
+  command /opt/homebrew/bin/tailscale \
+    --socket="$HOME/.local/share/tailscale-socks/tailscaled.sock" \
+    "$@"
+}
+alias psql="/Applications/Postgres.app/Contents/Versions/latest/bin/psql"
 
 HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/history"
 HISTSIZE=100000

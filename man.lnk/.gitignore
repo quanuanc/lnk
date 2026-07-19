@@ -3,4 +3,4 @@
 *-devlocal.*
 .idea
 *.env
-mise*toml
+*mise*toml

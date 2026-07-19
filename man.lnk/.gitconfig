@@ -18,13 +18,14 @@
 [delta]
     navigate = true  # use n and N to move between diff sections
     dark = true      # or light = true, or omit for auto-detection
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://gitee.com"]
 	provider = generic
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [pull]
 	rebase = true
 [alias]
 	df = difftool
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

@@ -1,5 +1,23 @@
 {
-  "proxy": "http://127.0.0.1:6152",
+  "ssh_connections": [
+    {
+      "host": "one",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/quanuanc/compose/./"
+          ]
+        }
+      ]
+    }
+  ],
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  // "proxy": "http://127.0.0.1:6152",
   "diff_view_style": "split",
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
@@ -17,24 +35,16 @@
   },
   "agent_servers": {
     "codex-acp": {
+      "default_config_options": {
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "high"
+      },
       "type": "registry",
-      "default_model": "gpt-5.2/high",
     },
   },
   "base_keymap": "VSCode",
   "git_panel": {
     "dock": "left",
-    "sort_by_path": true,
-  },
-  "agent": {
-    "dock": "right",
-    "default_profile": "write",
-    "default_model": {
-      "effort": "high",
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
-    },
-    "model_parameters": [],
   },
   "auto_install_extensions": {
     "beancount": false,
