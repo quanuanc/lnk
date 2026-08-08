@@ -1,0 +1,22 @@
+# Zim modules are initialized in this order.
+
+# Core shell behavior and utilities.
+zmodule environment
+zmodule git
+zmodule input
+zmodule termtitle
+zmodule utility
+
+# Fast, lightweight prompt.
+zmodule duration-info
+zmodule git-info
+zmodule asciiship
+
+# Completion definitions must be added before the completion module.
+zmodule zsh-users/zsh-completions --fpath src
+zmodule completion
+
+# Interactive enhancements that need to load last.
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-history-substring-search
+zmodule zsh-users/zsh-autosuggestions
