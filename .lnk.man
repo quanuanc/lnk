@@ -13,6 +13,5 @@
 .m2/settings.xml
 .zimrc
 .zprofile
-.zsh_plugins.pre.txt
 .zsh_plugins.txt
 .zshrc
