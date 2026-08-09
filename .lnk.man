@@ -10,7 +10,6 @@
 .gitconfig
 .gitignore
 .ideavimrc
-.local/share/zsh/site-functions/_cargo
 .m2/settings.xml
 .zimrc
 .zprofile
