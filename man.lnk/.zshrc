@@ -56,10 +56,12 @@ if [[ ! "$ZIM_HOME/init.zsh" -nt "${ZIM_CONFIG_FILE:-${ZDOTDIR:-$HOME}/.zimrc}" 
 fi
 source "$ZIM_HOME/init.zsh"
 
+# Keep asciiship's prompt, but do not show the previous command's exit status.
+PS1=${PS1//\%\(\?.%F\{green\}.%F\{red\}\%\? \)/}
+
 # Search command history by the text already typed.
 zmodload zsh/terminfo 2>/dev/null
 [[ -n "${terminfo[kcuu1]}" ]] && bindkey "${terminfo[kcuu1]}" history-substring-search-up
 [[ -n "${terminfo[kcud1]}" ]] && bindkey "${terminfo[kcud1]}" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
